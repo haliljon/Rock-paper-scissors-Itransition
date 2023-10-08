@@ -12,9 +12,6 @@ class  Game
             show_list
             user_answer = get_user_answer.to_i
             break if user_answer == 0
-            # if get_user_answer.to_s == '?'
-            #     help
-            # end
             comp_answer = rand(1..@moves.length).to_i
             puts "Your move: #{@moves[user_answer - 1]}"
             puts "Computer move: #{@moves[comp_answer - 1]}"
